@@ -36,7 +36,7 @@ class PropertyController extends Controller
         }
 
        
-        $client = Property::create($validatedData);
+        $properties = Property::create($validatedData);
 
        
         return redirect()->route('property.create')->with('success', 'Property added successfully.');

@@ -24,6 +24,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('property.create') }}">New Property</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('dashboard') }}">Properties</a>
+                </li>
                 
             </ul>
         </div>

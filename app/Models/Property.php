@@ -8,4 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class Property extends Model
 {
     use HasFactory;
+    protected $table = 'property';
+    protected $fillable = ['title','bedrooms', 'bathrooms', 'location','price','type','description', 'photo'];
 }
