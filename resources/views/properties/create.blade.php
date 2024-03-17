@@ -1,4 +1,5 @@
 @extends('layouts.app')
+
 @section('content')
 
     <h1>Add New Property</h1>

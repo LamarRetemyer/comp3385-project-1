@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\IndividualPropertyController;
 use App\Http\Controllers\ViewPropertyController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PropertyController;
@@ -26,3 +27,4 @@ Route::get('/about', function () {
 Route::get('/properties/create', [PropertyController::class, 'create'])->name('property.create');
 Route::post('/properties', [PropertyController::class, 'store'])->name('property.store');
 Route::get('/dashboard', [ViewPropertyController::class, 'index'])->name('dashboard');
+Route::get('/properties/{id}', [IndividualPropertyController::class, 'index'])->name('property.show');
