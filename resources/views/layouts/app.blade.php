@@ -9,7 +9,7 @@
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark"  style="background-color: #15b8a7; font-size: 15px;">
     <div class="container">
-        <img src="images/icon.png" alt="HouseIcon" style="width: 30px; padding-right: 5px;">
+        <!-- <img src="images/icon.png" alt="HouseIcon" style="width: 30px; padding-right: 5px;"> -->
         <a class="navbar-brand" href="#">Project 1</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>

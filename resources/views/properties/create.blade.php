@@ -4,8 +4,16 @@
 
     <h1>Add New Property</h1>
 
-    <form method="POST" action="{{ route('property.store') }}" enctype="multipart/form-data">
+    @if (session('success'))
+            <div class="alert alert-success">
+                {{ session('success') }}
+            </div>
+    @endif
+
+    <form method="POST" action="{{ route('property.store') }}" enctype="multipart/form-data" >
         @csrf
+       
+
         <div class="form-group">
             <label for="title">Property Title</label>
             <input type="text" class="form-control" id="title" name="title" value="{{ old('title') }}" required>
@@ -44,7 +52,7 @@
             <input type="text" class="form-control" id="location" name="location" value="{{ old('location') }}" required>
         </div>
 
-        <div class="form-group">
+        <div class="form-group" style="padding:10px;">
             <label for="photo">Photo</label>
             <input type="file" class="form-control-file" id="photo" name="photo" accept="image/*">
         </div>
